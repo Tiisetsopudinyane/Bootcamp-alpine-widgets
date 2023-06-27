@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(54, 52, 52);
+    color: rgb(197, 197, 197);
+}
+.section{
+    flex: 1;
+}
+button{
+    background-color: rgb(3, 121, 3);
+    color: rgb(255, 255, 255);
+    border-radius: 2em;
+    padding: .5em;
+    font-weight: bold;
+    border: none;
+}
+button:hover{
+    background-color: rgb(0, 0, 0);
+}
+.box{
+    padding:2em;
+    margin:2em;
+    border-radius: 4em;
+    flex: 1;
+}
+@media (min-width:960px) {
+    .section{
+        display: flex; 
+
+    }
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BootCamp Functions</title>
+        <script src="//unpkg.com/alpinejs" defer></script>
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>  
+        
+        <script src="TransportFee.js"></script>
+      <script src="TransportFee-widget.js"></script>
+
+      <script src="greeting.js"></script>
+      <script src="greeting-widget.js"></script>
+
+      <script src="longestWord.js"></script>
+      <script src="longestWord-widget.js"></script>
+
+      <script src="shortestWord.js"></script>
+      <script src="ShortestWord-widget.js"></script>
+
+      <script src="WordLength.js"></script>
+      <script src="wordLength-widget.js"></script>
+        
+    </head>
+      <body>
+        <div class="section" >
+            <div class="box">
+                <div x:data="transport">
+                    <h1>Transport Fee</h1>
+                    <p>Enter your day Time 'morning' / 'afternoon' or 'nightshift' bellow</p>
+                    <p x:text="dayTime"></p>
+                    <input type="text" x:model="dayTime">
+                    <p x:text="results"></p>
+                    <button @click="dayTime_">check Price</button>
+                </div>
+            </div>
+            <div class="box">
+                <div x:data="greeting"> 
+                    <h1>Greet Message</h1>
+                    <p>Enter your name</p>
+                    <p x:text="name"></p>
+                    <input type="text" x:model="name">
+                    <p x:text="message"></p>
+                    <button @click="greeting_">check Message</button>
+                </div>
+            </div>
+            <div class="box">
+                <div x:data="longestWord"> 
+                    <h1>Display the longest word in a sentence</h1>
+                    <p>Enter your sentence</p>
+                    <p x:text="str"></p>
+                    <input type="text" x:model="str">
+                    <p x:text="longestWordResults"></p>
+                    <button @click="longestWord_">check word</button>
+                </div>
+            </div>
+        </div>
+        <div class="section" >
+            <div class="box">
+                <div x:data="shortestWord">
+                    <h1>Display Shottest Word in A sentence</h1>
+                    <p x:text="str"></p>
+                    <p>Enter your sentence</p>
+                    <input type="text" x:model="str">
+                    <p x:text="shortestWordResults"></p>
+                    <button @click="shortestWord_">check word</button>
+                </div>
+            </div>
+            <div class="box">
+                <div x:data="wordLength"> 
+                    <h1>Display the word length in a sentence</h1>
+                    <p x:text="str"></p>
+                    <p>Enter your sentence</p>
+                    <input type="text" x:model="str">
+                    <p x:text="wordLengthResults"></p>
+                    <button @click="wordLength_">check length</button>
+                </div>
+            </div>
+        </div>
+      </body>
+      <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.1/dist/cdn.min.js"></script>
+      <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</html>

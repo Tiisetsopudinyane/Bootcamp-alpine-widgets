@@ -1,13 +1,11 @@
 document.addEventListener('alpine:init',()=>{
     Alpine.data('shortestWord',()=>{
         return{
-            str:'',
+            ShortWord:'',
             shortestWordResults:'',
             shortestWord_(){
-                shortestWordResults=shortestWord(this.str);
-                setTimeout(()=>{
-                    this.str='';
-                },5000);
+                this.shortestWordResults=shortestWord(this.ShortWord);
+                
             }
         }
     })

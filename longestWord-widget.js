@@ -4,7 +4,7 @@ document.addEventListener('alpine:init',()=>{
             str:'',
             longestWordResults:'',
             longestWord_(){
-                this.longestWordResults=longestWord(str);
+                this.longestWordResults=longestWord(this.str);
             }
     }
     });

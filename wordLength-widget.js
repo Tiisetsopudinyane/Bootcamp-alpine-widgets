@@ -4,7 +4,7 @@ document.addEventListener('alpine:init',()=>{
             str:'',
             wordLengthResults:0,
             wordLength_(){
-                this.wordLengthResults=wordLength(this.str);
+                this.wordLengthResults=wordLengths(this.str);
             }
         }
     })

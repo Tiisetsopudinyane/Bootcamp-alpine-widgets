@@ -4,9 +4,7 @@ document.addEventListener("alpine:init",()=>{
             dayTime:'',
             results:'',
             dayTime_(){
-                console.log("nothing at all")
                 this.results=transportFee(this.dayTime);
-                console.log(this.results+' after')
             }
         }
     })

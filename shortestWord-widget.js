@@ -4,7 +4,7 @@ document.addEventListener('alpine:init',()=>{
             str:'',
             shortestWordResults:'',
             shortestWord_(){
-                shortestWordResults=shortestWord(this.str);
+                this.shortestWordResults=shortestWord(this.str);
                 setTimeout(()=>{
                     this.str='';
                 },5000);
